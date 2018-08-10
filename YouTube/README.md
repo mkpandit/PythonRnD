@@ -5,6 +5,6 @@
  - Converts vidoe files (MP4) to MP3
 
 ### Must Requires
-> FFMPEG
-> PyTube python module
-> YouTube Data API Key
+- **FFMPEG**
+- **PyTube python module**
+- **YouTube Data API Key**
