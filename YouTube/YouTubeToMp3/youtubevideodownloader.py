@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
-
-import argparse
 from apiclient.discovery import build
 from apiclient.errors import HttpError
 from oauth2client.tools import argparser
@@ -12,7 +9,7 @@ import subprocess
 
 class YoutubeVideo:
     def __init__( self ):
-        self.api_key = "AIzaSyB1PV_bmG46usQuC-UW7UwNXexgdyv1570"
+        self.api_key = "API KEY"
         self.youtube_api_service_name = "youtube"
         self.youtube_api_version = "v3"
 
@@ -49,6 +46,7 @@ class YoutubeVideo:
         ).execute()
         return video_details
     
+    #Download video file
     def youtube_video_download( self, video_id, download_path ):
         video_object = pytube.YouTube( 'https://www.youtube.com/watch?v=' + video_id )
         youtube_streams = video_object.streams.filter( file_extension='mp4' ).all()
@@ -62,6 +60,7 @@ class YoutubeVideo:
         else:
             return False
 
+    #Convert video file to mp3
     def youtube_video_conversion( self, path, input_file, output_file ):
         video_download_command = ['ffmpeg', '-i', path+ '/' + input_file, path+ '/' + output_file ]
         subprocess.call( video_download_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE )
