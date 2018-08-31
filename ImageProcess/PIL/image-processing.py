@@ -23,9 +23,30 @@ class processImage:
         fnt = ImageFont.truetype( '/Library/Fonts/Georgia.ttf', 24 )
         d = ImageDraw.Draw( im )
         d.text( ( ( width / 2 ) - 100 , ( height / 2) - 100 ), textLine, font = fnt, fill = ( 255, 255, 0 ) )
-        im.save( 'img/new.png' )
+        im.save( 'img/text_image.png' )
         im.show()
+    
+    def composeImage( self, imgOne, imgTwo, vertical = 1 ):
+        imOne = Image.open( imgOne )
+        imOneWidth, imOneHeight = imOne.size
+        imOne.thumbnail( ( 300, 300 ) )
+
+        imTwo = Image.open( imgTwo )
+        imTwoWidth, imTwoHeight = imTwo.size
+        imTwo.thumbnail( ( 300, 300 ) )
+        
+        if vertical == 1:
+            imBase = Image.new( 'RGB', ( 630, 320 ), ( 255, 255, 255 ) )
+            imBase.paste( imOne, ( 10, 10 ) )
+            imBase.paste( imTwo, ( 320, 10 ) )
+        else:
+            imBase = Image.new( 'RGB', ( 320, 630 ), ( 255, 255, 255 ) )
+            imBase.paste( imOne, ( 10, 10 ) )
+            imBase.paste( imTwo, ( 10, 320 ) )
+
+        imBase.save( 'img/compose.jpg' )
+        imBase.show()
 
 if __name__ == "__main__":
     image = processImage()
-    print( image.describeImage( 'img/5.jpg' ) )
+    image.composeImage( 'img/8.jpg', 'img/9.jpg', 1 )
