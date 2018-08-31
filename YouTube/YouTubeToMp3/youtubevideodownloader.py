@@ -9,7 +9,7 @@ import subprocess
 
 class YoutubeVideo:
     def __init__( self ):
-        self.api_key = "API KEY"
+        self.api_key = ""
         self.youtube_api_service_name = "youtube"
         self.youtube_api_version = "v3"
 
