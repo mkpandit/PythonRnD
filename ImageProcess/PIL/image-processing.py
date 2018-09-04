@@ -56,4 +56,4 @@ class processImage:
 
 if __name__ == "__main__":
     image = processImage()
-    image.createNewImage( 'img/8.jpg', 'মনিষ পন্ডিত বাড়ি নেই' )
+    image.createNewImage( 'img/8.jpg', 'He is not at home since 20 years!' )
