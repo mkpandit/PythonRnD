@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from PIL import Image, ImageDraw, ImageFont
 import math
@@ -20,7 +21,7 @@ class processImage:
         width = self.describeImage( imgPath )[1]
         height = self.describeImage( imgPath )[0]
 
-        fnt = ImageFont.truetype( '/Library/Fonts/Georgia.ttf', 24 )
+        fnt = ImageFont.truetype( '/Library/Fonts/SolaimanLipi.ttf', 20, encoding='unic' ) #Georgia.ttf
         d = ImageDraw.Draw( im )
         d.text( ( ( width / 2 ) - 100 , ( height / 2) - 100 ), textLine, font = fnt, fill = ( 255, 255, 0 ) )
         im.save( 'img/text_image.png' )
@@ -47,6 +48,12 @@ class processImage:
         imBase.save( 'img/compose.jpg' )
         imBase.show()
 
+    def rotateImage( self, imgPath ):
+        im = Image.open( imgPath )
+        im_rotated = im.rotate( 45 )
+        print ( im_rotated.size )
+        im_rotated.show()
+
 if __name__ == "__main__":
     image = processImage()
-    image.composeImage( 'img/8.jpg', 'img/9.jpg', 1 )
+    image.createNewImage( 'img/8.jpg', 'মনিষ পন্ডিত বাড়ি নেই' )
