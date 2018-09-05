@@ -6,3 +6,9 @@
 
 ### Public IP
  - Extract Public IP of a virtual machine
+
+### Managed Disk
+ - Create a managed disk
+ - Attach/detach disk to/from a virtual machine
+ - Delete a disk
+ - List available disk with status
