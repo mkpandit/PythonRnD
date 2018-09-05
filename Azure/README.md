@@ -12,3 +12,6 @@
  - Attach/detach disk to/from a virtual machine
  - Delete a disk
  - List available disk with status
+
+### Virtual machine
+ - List virtual machines
