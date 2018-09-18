@@ -1,4 +1,3 @@
-## Python Data Formatl
+## Python Data Format
 
  - JSON
- - YML
