@@ -7,9 +7,6 @@ import pprint
 class processJSON:
     def __init__( self ):
         self.author = "Manish Pandit, updatedmanish@gmail.com"
-
-    def describeImage( self ):
-        pass
     
     def writeJSONFile( self, data, targetOutput ):
         with open( targetOutput, 'w' ) as outputFile:
