@@ -1,0 +1,90 @@
+[
+    {
+        "maxDataDiskCount": 4,
+        "memoryInMb": 3584,
+        "name": "Standard_DS1_v2",
+        "numberOfCores": 1,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 7168
+    },
+    {
+        "maxDataDiskCount": 8,
+        "memoryInMb": 7168,
+        "name": "Standard_DS2_v2",
+        "numberOfCores": 2,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 14336
+    },
+    {
+        "maxDataDiskCount": 16,
+        "memoryInMb": 14336,
+        "name": "Standard_DS3_v2",
+        "numberOfCores": 4,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 28672
+    },
+    {
+        "maxDataDiskCount": 32,
+        "memoryInMb": 28672,
+        "name": "Standard_DS4_v2",
+        "numberOfCores": 8,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 57344
+    },
+    {
+        "maxDataDiskCount": 64,
+        "memoryInMb": 57344,
+        "name": "Standard_DS5_v2",
+        "numberOfCores": 16,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 114688
+    },
+    {
+        "maxDataDiskCount": 8,
+        "memoryInMb": 14336,
+        "name": "Standard_DS11_v2",
+        "numberOfCores": 2,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 28672
+    },
+    {
+        "maxDataDiskCount": 16,
+        "memoryInMb": 28672,
+        "name": "Standard_DS12_v2",
+        "numberOfCores": 4,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 57344
+    },
+    {
+        "maxDataDiskCount": 32,
+        "memoryInMb": 57344,
+        "name": "Standard_DS13_v2",
+        "numberOfCores": 8,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 114688
+    },
+    {
+        "maxDataDiskCount": 64,
+        "memoryInMb": 114688,
+        "name": "Standard_DS14_v2",
+        "numberOfCores": 16,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 229376
+    },
+    {
+        "maxDataDiskCount": 64,
+        "memoryInMb": 143360,
+        "name": "Standard_DS15_v2",
+        "numberOfCores": 20,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 286720
+    },
+    {
+        "maxDataDiskCount": 8,
+        "memoryInMb": 7168,
+        "name": "Standard_DS2_v2_Promo",
+        "numberOfCores": 2,
+        "osDiskSizeInMb": 1047552,
+        "resourceDiskSizeInMb": 14336
+    }
+]
