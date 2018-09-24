@@ -25,14 +25,16 @@ from azure.mgmt.storage.models import (
 class azureStorage:
     
     def __init__(self):
-        self.author = "Manish Pandit, HTBase, mpandit@htbase.com"
+        self.author = "Manish Pandit, updatedmanish@gmail.com"
     
+    #List storages from Azure account
     def azureStorageList(self, client):
         storageList = []
         for storage in client.storage_accounts.list():
             storageList.append(storage.name + '_*_' + storage.location + '_*_' + str(storage.creation_time) + '_*_' + str(storage.encryption) + '_*_' + str(storage.type)+"_*_"+str(storage.id.split("/")[4])+"_*_"+str(storage.status_of_primary))
         return storageList
-        
+
+    #Delete a storage from Azure
     def azureStorageDelete(self, storage_name, resource_group, client):
         operation_status = []
         async_creation = client.storage_accounts.delete(resource_group, storage_name)
@@ -46,7 +48,8 @@ class azureStorage:
         else:
             operation_status.append("Storage "+storage_name+" has been deleted successfully")
         return operation_status
-        
+
+    #Empty a storage from Azure
     def azureStorageEmpty(self, storage_name, resource_group, client, location):
         operation_status = []
         delete_storage = self.azureStorageDelete(storage_name, resource_group, client)

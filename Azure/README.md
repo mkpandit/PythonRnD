@@ -7,6 +7,11 @@
 ### Public IP
  - Extract Public IP of a virtual machine
 
+### Storage
+ - List all storage
+ - Delete a storage
+ - Empty a storage
+
 ### Managed Disk
  - Create a managed disk
  - Attach/detach disk to/from a virtual machine
